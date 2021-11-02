@@ -286,7 +286,7 @@ virtualenv==20.4.2
     #   pre-commit
 webcolors==1.11.1
     # via blockdiag
-yarl==1.7.0
+yarl==1.7.2
     # via -r requirements/base.txt
 
 # The following packages are considered to be unsafe in a requirements file:
