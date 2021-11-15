@@ -16,7 +16,7 @@ appdirs==1.4.4
     # via
     #   -r requirements/lint.txt
     #   virtualenv
-async-timeout==4.0.0
+async-timeout==4.0.1
     # via -r requirements/base.txt
 attrs==20.3.0
     # via
@@ -49,7 +49,7 @@ chardet==4.0.0
     # via
     #   -r requirements/base.txt
     #   requests
-cherry_picker==2.0.0 ; python_version >= "3.6"
+cherry_picker==2.1.0 ; python_version >= "3.6"
     # via -r requirements/dev.in
 click==7.1.2
     # via
@@ -60,7 +60,7 @@ click==7.1.2
     #   towncrier
 click-default-group==1.2.2
     # via towncrier
-coverage[toml]==6.1.1
+coverage[toml]==6.1.2
     # via
     #   -r requirements/test.txt
     #   pytest-cov
