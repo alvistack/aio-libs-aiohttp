@@ -1,0 +1,3 @@
+python-aiohttp source: no-debian-changes
+python-aiohttp source: source-contains-prebuilt-windows-binary
+python-aiohttp source: source-package-encodes-python-version
