@@ -437,6 +437,15 @@ class AioHTTPTestCase(TestCase):
     Note that the TestClient's methods are asynchronous: you have to
     execute function on the test client using asynchronous methods.
     """
+    def _setupAsyncioRunner(self):
+        super()._setupAsyncioRunner()
+        asyncio.set_event_loop(self._asyncioRunner.get_loop())
+
+    def _tearDownAsyncioRunner(self):
+        try:
+            super()._tearDownAsyncioRunner()
+        finally:
+            asyncio.set_event_loop(None)
 
     async def get_application(self) -> Application:
         """Get application.
