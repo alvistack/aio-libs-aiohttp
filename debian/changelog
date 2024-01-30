@@ -1,0 +1,5 @@
+python-aiohttp (100:3.12.12-1) UNRELEASED; urgency=medium
+
+  * https://github.com/aio-libs/aiohttp/releases/tag/v3.12.12
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Wed, 11 Jun 2025 15:27:19 +0800
