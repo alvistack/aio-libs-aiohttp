@@ -79,7 +79,7 @@ vendor/llhttp/node_modules: vendor/llhttp/package.json
 generate-llhttp: .llhttp-gen
 
 .PHONY: cythonize
-cythonize: .install-cython $(PYXS:.pyx=.c) aiohttp/_websocket/reader_c.c
+cythonize: $(PYXS:.pyx=.c) aiohttp/_websocket/reader_c.c
 
 .install-deps: .install-cython $(PYXS:.pyx=.c) aiohttp/_websocket/reader_c.c $(call to-hash,$(CYS) $(REQS))
 	@python -m pip install -r requirements/dev.in -c requirements/dev.txt
