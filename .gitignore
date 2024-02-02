@@ -64,3 +64,5 @@ sources
 var/*
 venv
 virtualenv.py
+
+.pybuild/
