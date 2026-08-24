@@ -18,7 +18,7 @@ from .models import (
     WSMsgType,
 )
 
-ALLOWED_CLOSE_CODES: Final[Set[int]] = {int(i) for i in WSCloseCode}
+ALLOWED_CLOSE_CODES = {int(i) for i in WSCloseCode}
 
 # States for the reader, used to parse the WebSocket frame
 # integer values are used so they can be cythonized
@@ -326,7 +326,7 @@ class WebSocketReader:
         if self._tail:
             data, self._tail = self._tail + data, b""
 
-        start_pos: int = 0
+        start_pos = 0
         data_len = len(data)
         data_cstr = data
 
