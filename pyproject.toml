@@ -9,11 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name        = "aiohttp"
-license     = "Apache-2.0 AND MIT"
-license-files = [
-  "LICENSE.txt",
-  "vendor/llhttp/LICENSE",
-]
+license     = {text = "Apache-2.0 AND MIT"}
 description = "Async http client/server framework (asyncio)"
 readme      = "README.rst"
 classifiers = [

@@ -60,7 +60,7 @@ TUPLE_NEW = tuple.__new__
 
 # Overhead added to each message to ensure that tiny messages can't use
 # unreasonable amounts of memory.
-MSG_SIZE_OVERHEAD: Final[int] = 128
+MSG_SIZE_OVERHEAD = 128
 
 STALLED_READER_COLLECTED: Final[str] = (
     "WebSocketReader was garbage collected while stalled; "
